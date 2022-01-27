@@ -14,7 +14,28 @@
             hashtag += "#";
         }
         
-        
+        var number = 1
+        while (number < 101) {
+            if (number % 15 ===0) {
+                console.log("Art3mis & Parzival")
+            } else if (number % 3 === 0) {
+                console.log("Art3mis")
+            } else if (number % 5 === 0) {
+                console.log("Parzival")
+            } else {
+                console.log(number)
+            }
+            number += 1;
+        }
+
+        var size = 100
+        for (var x = 0; x <= 8; x++) {
+            var space = " "
+            for (var y = 0; y <= 8; y++) {
+                space += (y+x+1) % 2? " ":"#";
+            }
+            console.log(space);
+        }
     </script>
 
 
